@@ -1,0 +1,10 @@
+{
+  "heroTitle": "Welcome to Iron Software",
+  "heroSubtitle": "We build amazing web experiences",
+  "features": ["Pixel-perfect UI", "Responsive design", "Performance optimized"],
+  "navbar": [
+    {"name": "Home", "link": "/"},
+    {"name": "About", "link": "/"},
+    {"name": "Contact", "link": "/"}
+  ]
+}

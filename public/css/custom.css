@@ -1,0 +1,17 @@
+/* custom.css */
+
+/* Navbar styles */
+.navbar {}
+
+/* Hero section */
+.hero {
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+}
+
+/* Features section */
+.features {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
