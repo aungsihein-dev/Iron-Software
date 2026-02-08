@@ -1,10 +1,8 @@
 {
-  "heroTitle": "Welcome to Iron Software",
-  "heroSubtitle": "We build amazing web experiences",
-  "features": ["Pixel-perfect UI", "Responsive design", "Performance optimized"],
-  "navbar": [
-    {"name": "Home", "link": "/"},
-    {"name": "About", "link": "/"},
-    {"name": "Contact", "link": "/"}
-  ]
+  "heroTitle": "Building on the success of IronPDF for .NET",
+  "heroSubtitle_1": "Beta Software Program",
+  "heroSubtitle_2": "IronPDF for C++",
+  "heroSubtitle_3": "Coming soon"
 }
+
+
