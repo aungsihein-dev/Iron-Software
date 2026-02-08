@@ -7,9 +7,7 @@
 /* Gotham Book - Regular */
 @font-face {
   font-family: 'Gotham';
-  src: url('/assets/fonts/Gotham/Gotham-Book.woff2') format('woff2'),
-       url('/assets/fonts/Gotham/Gotham-Book.woff') format('woff'),
-       url('/assets/fonts/Gotham/Gotham-Book.otf') format('opentype');
+  src: url('/assets/fonts/Gotham/Gotham Book/Gotham-Book.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -17,9 +15,7 @@
 /* Gotham Medium */
 @font-face {
   font-family: 'Gotham';
-  src: url('/assets/fonts/Gotham/Gotham-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Gotham/Gotham-Medium.woff') format('woff'),
-       url('/assets/fonts/Gotham/Gotham-Medium.otf') format('opentype');
+  src: url('/assets/fonts/Gotham/Gotham Medium/Gotham-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -27,9 +23,7 @@
 /* Gotham Bold */
 @font-face {
   font-family: 'Gotham';
-  src: url('/assets/fonts/Gotham/Gotham-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Gotham/Gotham-Bold.woff') format('woff'),
-       url('/assets/fonts/Gotham/Gotham-Bold.otf') format('opentype');
+  src: url('/assets/fonts/Gotham/Gotham Bold/Gotham-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
@@ -39,14 +33,14 @@
 /* ---------------------------- */
 
 .navbar-nav.d-lg-flex {
-  gap: 40px; 
+  gap: 40px;
 }
 
 .navbar-brand img {
   width: auto;
-  height: 25px; 
+  height: 25px;
   max-width: 100%;
-  margin-top: -4px; 
+  margin-top: -4px;
 }
 
 .navbar {
@@ -61,7 +55,7 @@
 
 .navbar-nav .nav-link {
   font-family: 'Gotham', Arial, sans-serif;
-  font-weight: 500; 
+  font-weight: 500;
   color: white !important;
 }
 
@@ -90,46 +84,45 @@
 
 .hero-section {
   background-color: #2C0F29;
-  height: 510px; /* full viewport height */
+  height: 510px;
+  /* full viewport height */
   position: relative;
-  overflow: visible; /* allow illustration to overflow */
-  padding-bottom: 0; /* remove extra padding */
+  overflow: visible;
+  /* allow illustration to overflow */
+  padding-bottom: 0;
+  /* remove extra padding */
 }
 
 .hero-content {
-  padding-bottom: 20px; /* adjust based on design */
+  padding-bottom: 200px;
   max-width: 700px;
 }
 
-/* Hero illustration */
-.pdf-main {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-bottom: -100px; /* negative margin to overlap Section 2 */
-  position: relative;
-  z-index: 5; /* make sure it sits above Section 2 */
-}
 .pdf-main {
   margin-top: 285px;
   margin-left: 310px;
-  width: 100%;          /* base width */
-  max-width: 1000px;    /* make it bigger than before */
-  height: auto;         /* maintain aspect ratio */
+  width: 100%;
+  /* base width */
+  max-width: 1000px;
+  /* make it bigger than before */
+  height: auto;
+  /* maintain aspect ratio */
   display: block;
-  margin-bottom: -100px; /* overlap Section 2 */
+  margin-bottom: -100px;
+  /* overlap Section 2 */
   position: relative;
   z-index: 5;
-  transform: scale(1.5); /* scale it 20% bigger */
-  transform-origin: bottom right; /* scale from bottom-right corner */
+  transform: scale(1.5);
+  /* scale it 20% bigger */
+  transform-origin: bottom right;
+  /* scale from bottom-right corner */
 }
+
 /* Hero product SVG */
 .hero-product-svg {
-  width: 232px;      
-  height: 40px;       
-  display: block;     
+  width: 232px;
+  height: 40px;
+  display: block;
   margin-bottom: 12px;
 }
 
@@ -138,7 +131,7 @@
 /* ---------------------------- */
 
 .hero-title {
-  font-weight: 700;     
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0;
@@ -146,8 +139,9 @@
   color: #FFFFFF;
 }
 
-.hero-subtitle { 
-  font-weight: 700; /* changed from 900 for available font */
+.hero-subtitle {
+  font-weight: 700;
+  /* changed from 900 for available font */
   font-size: 50px;
   line-height: 54px;
   letter-spacing: 0;
@@ -156,7 +150,8 @@
 }
 
 .hero-subtitle-secondary {
-  font-weight: 700; /* changed from 900 */
+  font-weight: 700;
+  /* changed from 900 */
   font-size: 50px;
   line-height: 54px;
   letter-spacing: 0;
@@ -165,61 +160,92 @@
 }
 
 .hero-subtitle-light {
-  font-weight: 300;     
+  font-weight: 300;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0;
   margin-top: 1px;
   color: #8F618F;
 }
+
 /* ---------------------------- */
-/* ROW 2 - Linear Gradient Background */
+/* SIGN UP SECTION */
 /* ---------------------------- */
-.row-two {
-  width: 100vw;                   /* full viewport width */
-  min-height: 300px;              /* visible height for gradient */
-  margin-left: calc(-50vw + 50%); /* neutralize container centering */
+
+.signup-section {
+  background-color: #2C0F29;
+  height: 510px;
+  /* full viewport height */
+  position: relative;
+  overflow: visible;
+  /* allow illustration to overflow */
+  padding-bottom: 0;
+  /* remove extra padding */
+}
+
+.signup-content {
+  padding-bottom: 200px;
+  max-width: 700px;
+}
+
+
+/* ---------------------------- */
+/* SIGN UP TYPOGRAPHY */
+/* ---------------------------- */
+.signup-section {
+  width: 100vw;
+  /* full viewport width */
+  min-height: 300px;
+  /* visible height for gradient */
+  margin-left: calc(-50vw + 50%);
+  /* neutralize container centering */
   background: linear-gradient(to right, #8E608E 30%, #402640 75%, #371A34 100%);
   color: #fff;
   padding: 80px 0;
   display: flex;
   align-items: center;
 }
-.row-two {
+
+.signup-section {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: linear-gradient(to right, #8E608E 30%, #402640 75%, #371A34 100%);
   color: #fff;
-  padding: 120px 0 80px; /* increased top padding for overlap */
+  padding: 120px 0 80px;
+  /* increased top padding for overlap */
   display: flex;
   align-items: center;
-  position: relative; /* keep stacking context */
+  position: relative;
+  /* keep stacking context */
 }
-.row-two .container {
+
+.signup-section .container {
   max-width: 1140px;
-  width: 100%;                     /* make container use full section width */
+  width: 100%;
+  /* make container use full section width */
 }
+
 /* ---------------------------- */
 /* RESPONSIVE MEDIA QUERIES */
 /* ---------------------------- */
 
 /* Tablet / medium screens */
 @media (max-width: 1200px) {
-    .pdf-main {
-        width: 100%;
-        max-width: 700px;
-        height: auto;
-        display: block;
-        margin-right: 175px;
-      }
-    
-      .hero-section {
-        background-color: #2C0F29;
-        min-height: 350px;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-      }
+  .pdf-main {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin-right: 175px;
+  }
+
+  .hero-section {
+    background-color: #2C0F29;
+    min-height: 350px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 /* Mobile / small screens */
@@ -235,14 +261,14 @@
     margin-top: 30px;
   }
 
-    .pdf-main {
-        width: 100%;
-        max-width: 90%;
-        height: auto;
-        display: block;
-        margin-right: auto;
+  .pdf-main {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-right: auto;
 
-      }
+  }
 
   .hero-subtitle,
   .hero-subtitle-secondary {
@@ -258,7 +284,8 @@
     font-size: 12px;
     line-height: 24px;
   }
-  .row-two {
+
+  .signup-section {
     padding: 60px 20px;
     text-align: center;
   }
@@ -266,6 +293,7 @@
 
 /* Extra small screens */
 @media (max-width: 576px) {
+
   .hero-subtitle,
   .hero-subtitle-secondary {
     font-size: 28px;
@@ -284,5 +312,200 @@
   .hero-product-svg {
     width: 180px;
     height: auto;
+  }
+}
+
+/* -------------------------------------------------- */
+/* RESPONSIVE ENHANCEMENTS (industry-standard)         */
+/* Mobile-first: extra utilities without changing      */
+/* current desktop visuals                             */
+/* Breakpoints: 400 / 576 / 768 / 992 / 1200 / 1400    */
+/* -------------------------------------------------- */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .pdf-main {
+    transform: none !important;
+    /* avoid large scaling animations */
+  }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+
+  .hero-subtitle,
+  .hero-subtitle-secondary {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .hero-title {
+    font-size: 13px;
+  }
+
+  .signup-section {
+    padding: 48px 14px 48px;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* Small devices (portrait phones) already covered by <=576 above, adding fine-tune */
+@media (max-width: 576px) {
+
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar-brand img {
+    height: 22px;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    /* allow content to size naturally */
+    overflow: visible;
+    /* avoid clipping */
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 16px 16px;
+    text-align: center;
+  }
+
+  .pdf-main {
+    max-width: 520px;
+    width: 100%;
+    margin: 16px auto 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    /* disable large desktop scaling */
+  }
+
+  .signup-section {
+    padding: 56px 16px 56px;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* Large devices (desktops <= 992) - reinforce mobile menu and hero image */
+@media (max-width: 992px) {
+
+  /* Ensure desktop nav is hidden consistently at Bootstrap lg breakpoint */
+  .d-lg-flex {
+    display: none !important;
+  }
+
+  .pdf-main {
+    transform: none;
+    /* neutralize 1.5x scale from desktop */
+    margin: 24px auto 0;
+    max-width: 680px;
+  }
+
+  .hero-section {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* XL devices (>= 1200px) - keep layout stable */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    /* align with current design */
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* XXL devices (>= 1400px) - widen container and avoid over-scaling */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  /* Keep hero graphic from becoming excessively large on ultrawide */
+  .pdf-main {
+    max-width: 1100px;
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
+  }
+}
+
+/* 1457px → 1201px */
+/* @media (max-width: 1869) and (min-width: 1201px) {
+  .pdf-main {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    z-index: 5;
+    transform-origin: bottom right;
+  }
+
+  .pdf-main {
+    transform: scale(1.2);
+    bottom: -80px;
+    max-width: 900px;
+  }
+} */
+
+/* Respect iOS safe areas on devices with notches */
+@supports (padding: max(0px)) {
+
+  .navbar,
+  header,
+  .hero-section {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .hero-content {
+    padding-bottom: 20px;
+    /* adjust based on design */
   }
 }

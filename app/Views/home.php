@@ -1,5 +1,5 @@
 <?php echo view('layouts/header'); ?>
-
+<!-- HERO -->
 <section class="hero-section">
   <div class="container">
     <div class="row align-items-center">
@@ -38,13 +38,21 @@
     </div>
   </div>
 </section>
-<!-- ROW 2 -->
-<section class="row-two">
+<!-- SIGN UP -->
+<section class="signup-section">
   <div class="container">
-    Second row content
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="signup-content">
+          <h1 class="signup-title"><?= esc($signupSubtitle_1) ?></h1>
+          <h2 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h2>
+          <h2 class="signup-subtitle-secondary"><?= esc($heroSubtitle_2) ?></h2>
+          <p class="signup-subtitle-light"><?= esc($heroSubtitle_3) ?></p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
 <!-- ROW 3 -->
 <section class="row-three">
   <div class="container">
