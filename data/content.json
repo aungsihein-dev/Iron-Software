@@ -4,12 +4,15 @@
   "heroSubtitle_2": "IronPDF for C++",
   "heroSubtitle_3": "Coming soon",
   "signupSubtitle_1": "Be one of the first",
-  "signupSubtitle_2": "Sign up NOW to get early access",
-  "signupPlaceholder": "# Coming soon",
+  "signupSubtitle_2": "Sign up NOW to get early access!",
+  "signupPlaceholder": "Enter email address",
   "signupButton": "Sign up now",
-  "signupSubtitle_3": "Coming soon",
+  "signupSubtitle_3": "# Coming soon",
   "signupSubtitle_4": "IronPDF Beta Program also coming soon for ",
-  "signupSubtitle_5": "Python | Node.JS | Java "
+  "signupSubtitle_5": "Python",
+  "signupSubtitle_6": "Node.JS",
+  "signupSubtitle_7": "Java",
+  "signupSubtitle_slash": " | "
 }
 
 
