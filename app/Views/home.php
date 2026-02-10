@@ -45,6 +45,9 @@
                     <input type="email" class="signup-input" placeholder="<?= esc($signupPlaceholder) ?>" required />
                     <button type="submit" class="signup-btn">
                         <?= esc($signupButton) ?>
+                        <svg width="10" height="10" viewBox="0 0 10 10" style="vertical-align: middle; margin-left: 1px;">
+                            <polygon points="0,0 10,5 0,10" fill="#fff" />
+                        </svg>
                     </button>
                 </form>
                 <div class="light-btn-group">
