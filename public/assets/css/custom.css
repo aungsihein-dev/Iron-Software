@@ -306,6 +306,7 @@
 /*  FEATURE SECTION */
 /* ---------------------------- */
 .feature-first-section {
+  padding-top: 80px;
   width: 100%;
   background: radial-gradient(
     ellipse at top,
@@ -317,8 +318,10 @@
   );
 }
 
-.feat-title-row {
-  padding: 40px 0;
+.feat-title-row .container {
+    display: flex;            /* make flex container */
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically if needed */
 }
 .features-row {
   padding: 40px 0 80px;
@@ -341,13 +344,7 @@
   color: #ffffff;
   padding: 40px 0 80px;
 }
-.badge {
-  display: inline-block;
-  width: 80px;        /* adjust size */
-  height: auto;
-  margin-left: 15px;  /* space from title */
-  vertical-align: middle; /* align with h1 */
-}
+
 /* ---------------------------- */
 /* FEATURE TYPOGRAPHY */
 /* ---------------------------- */
@@ -368,6 +365,65 @@
   font-size: 14px;
   font-weight: 100; /* optional spacing */
 }
+
+.feat-desc {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
+}
+.feat-desc-bold {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------------------------- */
+/* PROPOSITION SECTION */
+/* ---------------------------- */
+
+.proposition-section {
+  position: relative;
+  width: 100%;
+  min-height: 500px;   
+  background-color: #402640;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+/* Container adjustments */
+.proposition-section .container {
+  max-width: 100%;    
+}
+/* Optional: center content vertically later */
+.proposition-section .row {
+  display: flex;
+  justify-content: center;
+}
+.propose-title{
+    margin-bottom: 25px;
+}
+.propose-title-start{
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.propose-title-end{
+  color: #C6AAC6;
+  font-size: 40px;
+  font-weight: 700;
+}
+.desc {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+.propose-desc {
+  max-width: 900px; /* or 640px */
+}
+  .proposition .col-md-4 {
+    text-align: right;
+  }
 /* ---------------------------- */
 /* RESPONSIVE MEDIA QUERIES */
 /* ---------------------------- */
@@ -435,6 +491,39 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+   .proposition-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .proposition-section .proposition-item {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .proposition-section .proposition-item img {
+    display: block;
+    margin: 0 auto 0.75rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .proposition-section .proposition-item-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .proposition-section .proposition-item-text {
+    margin: 0;
+  }
+  .proposition .col-md-4 {
+    text-align: center;
+    margin-right: 32px; /* spacing between image and text */
+    margin-bottom: 32px; /* spacing between image and text */
+  }
 }
 
 /* Extra small screens */
@@ -457,6 +546,10 @@
   .hero-product-svg {
     width: 180px;
     height: auto;
+  }
+  .feat-title-row img {
+    max-width: 280px;
+    max-height: 48px;
   }
 }
 

@@ -82,16 +82,12 @@
 </section>
 <!-- Feature Section -->
 <section class="feature-first-section">
-
   <!-- FULL-WIDTH ROW -->
   <div class="feat-title-row">
     <div class="container">
-      <h1 class="feat-title"> <?= esc($IronPdfTitle) ?></h1>
-      <img src="/images/badge.svg" class="badge" alt="badge">
+        <img src="/images/feature-title.svg" alt="feature title">
     </div>
   </div>
-
-  <!-- FULL-WIDTH ROW -->
   <div class="features-row">
     <div class="container">
       <div class="features-items">
@@ -115,19 +111,66 @@
 
 <section class="feature-second-section">
     <div class="container">
-    <div class="row">
-            <p class="feat-description">
-                The new <strong>IronPDF library for C++</strong> will enhance the C++ developer’s tool set with robust
-                PDF
-                generation and conversion capabilities. Developers will be able to generate new PDFs from HTML content
-                (from
-                text or from URL), as well as to combine, split, extract, and modify content from existing PDFs.<br><br>
-                <strong>IronPDF for C++</strong> will help developers create C++ applications that can do all of these
-                PDF
-                processing tasks and more, with speed, precision, control, and excellence.
+    <div class="row feat-description">
+            <p class="desc">
+                <span class="feat-desc"><?= esc($feat_desc_one_start) ?></span><span class="feat-desc-bold"><?= esc($feat_desc_one_bold) ?></span><span class="feat-desc"><?= esc($feat_desc_one_end) ?></span>
+            </p>
+              <p class="desc">
+                <span class="feat-desc-bold"><?= esc($feat_desc_two_start_bold) ?></span><span class="feat-desc"><?= esc($feat_desc_two_end) ?></span>
             </p>
         </div>
     </div>
 </section>
+<!-- Proposition Section -->
+<section class="proposition-section">
+    <div class="container">
+        <div class="row proposition">
+            <div class="col-md-4">
+                 <img src="/images/HTMLtoPDF.svg" alt="HTML to PDF">
+            </div>
+            <div class="col-md-8">
+                <div class="row propose-title">
+                    <h1>
+                        <span class="propose-title-start"><?= esc($propose_TitleStart) ?></span>
+                        <span class="propose-title-end"><?= esc($propose_TitleEnd) ?></span>
+                    </h1>
+                </div>
+                <div class="row propose-desc">
+                    <p class="desc"><?= esc($propose_description_one) ?></p>
+                </div>
+                <div class="row propose-desc">
+                    <p class="desc"><?= esc($propose_description_two) ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Early access Section -->
+<section class="proposition-section">
+    <div class="container">
+        <div class="row proposition">
+            <div class="col-md-4">
+                 <img src="/images/HTMLtoPDF.svg" alt="HTML to PDF">
+            </div>
+            <div class="col-md-8">
+                <div class="row propose-title">
+                    <h1>
+                        <span class="propose-title-start"><?= esc($propose_TitleStart) ?></span>
+                        <span class="propose-title-end"><?= esc($propose_TitleEnd) ?></span>
+                    </h1>
+                </div>
+                <div class="row propose-desc">
+                    <p class="desc"><?= esc($propose_description_one) ?></p>
+                </div>
+                <div class="row propose-desc">
+                    <p class="desc"><?= esc($propose_description_two) ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?php echo view('layouts/footer'); ?>
+
+
+
