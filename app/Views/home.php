@@ -41,16 +41,6 @@
             <div class="signup-content">
                 <h1 class="signup-title"><?= esc($signupSubtitle_1) ?></h1>
                 <h2 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h2>
-                <!-- <form class="signup-form">
-                    <input type="email" class="signup-input" placeholder="<?= esc($signupPlaceholder) ?>" required />
-                    <button type="submit" class="signup-btn">
-                        <?= esc($signupButton) ?>
-                        <svg width="10" height="10" viewBox="0 0 10 10"
-                            style="vertical-align: middle; margin-left: 1px;">
-                            <polygon points="0,0 10,5 0,10" fill="#fff" />
-                        </svg>
-                    </button>
-                </form> -->
                 <form class="signup-form">
                     <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
                     <button type="submit">

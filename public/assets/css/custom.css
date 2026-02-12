@@ -254,26 +254,26 @@
 }
 
 .signup-form {
-  display: flex;                 
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 26px;          
+  padding: 0 0 0 26px;
   width: 530px;
   height: 68px;
 
-  background: #FFFFFF;           
-  border: 3px solid #C6AAC6;    
-  border-radius: 81px;          
+  background: #ffffff;
+  border: 3px solid #c6aac6;
+  border-radius: 81px;
 
-  box-sizing: border-box;         
+  box-sizing: border-box;
 }
 
 /* ---------------------------
    Email Input
 --------------------------- */
 .signup-form input[type="email"] {
-  flex: 1;                       
+  flex: 1;
   margin: 0 auto;
   width: 130px;
   height: 17px;
@@ -281,11 +281,11 @@
   font-size: 14px;
   line-height: 17px;
 
-  color: #431F43;
+  color: #431f43;
 
   border: none;
   outline: none;
-  background: transparent;      
+  background: transparent;
 }
 
 /* ---------------------------
@@ -301,39 +301,39 @@
   width: 180px;
   height: 64px;
 
-  background: #E01A59;             
+  background: #e01a59;
   border: none;
-  border-radius: 79px;            
+  border-radius: 79px;
   cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
 .signup-form-two {
-  display: flex;                 
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 26px;          
+  padding: 0 0 0 26px;
   width: 630px;
   height: 68px;
 
-  background: #FFFFFF;           
-  border: 3px solid #FFFFFF;    
-  border-radius: 81px;          
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 81px;
 
-  box-sizing: border-box;         
+  box-sizing: border-box;
 }
 
 /* ---------------------------
    Email Input
 --------------------------- */
 .signup-form-two input[type="email"] {
-  flex: 1;                       
+  flex: 1;
   margin: 0 auto;
   width: 130px;
   height: 17px;
@@ -341,11 +341,11 @@
   font-size: 14px;
   line-height: 17px;
 
-  color: #431F43;
+  color: #431f43;
 
   border: none;
   outline: none;
-  background: transparent;      
+  background: transparent;
 }
 
 /* ---------------------------
@@ -361,15 +361,15 @@
   width: 180px;
   height: 64px;
 
-  background: #E01A59;             
+  background: #e01a59;
   border: none;
-  border-radius: 79px;            
+  border-radius: 79px;
   cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -378,35 +378,35 @@
 --------------------------- */
 @media (max-width: 490px) {
   .signup-form {
-    flex-direction: row;  /* keep horizontal if you want */
+    flex-direction: row; /* keep horizontal if you want */
     height: auto;
-    padding: 10px -50px; 
+    padding: 10px -50px;
     width: 700px;
     gap: 15px;
   }
 
   .signup-form input[type="email"],
   .signup-form button {
-    width: 50%;           
+    width: 50%;
     height: 50px;
     padding-right: 0px;
-    border-radius: 25px;  /* half of height for nice pill shape */
+    border-radius: 25px; /* half of height for nice pill shape */
   }
 
   .signup-form-two {
-    flex-direction: row;  /* keep horizontal if you want */
+    flex-direction: row; /* keep horizontal if you want */
     height: auto;
-    padding: 10px -50px; 
+    padding: 10px -50px;
     width: 800px;
     gap: 15px;
   }
 
   .signup-form-two input[type="email"],
   .signup-form-two button {
-    width: 50%;           
+    width: 50%;
     height: 50px;
     padding-right: 0px;
-    border-radius: 25px;  /* half of height for nice pill shape */
+    border-radius: 25px; /* half of height for nice pill shape */
   }
 }
 
@@ -642,7 +642,7 @@
   padding: 23px 30px;
 
   background: rgba(23, 6, 23, 0.8);
-  border: 3px solid #431F43;
+  border: 3px solid #431f43;
   border-radius: 122px;
 }
 
@@ -654,7 +654,7 @@
   width: 127px;
   height: 36px;
 
-  background: #C6AAC6;
+  background: #c6aac6;
   border-radius: 126px;
 }
 
@@ -671,7 +671,6 @@
   display: block;
 }
 
-
 .tech-badge-two {
   display: flex;
   align-items: center;
@@ -679,7 +678,7 @@
 
   width: 127px;
   height: 36px;
-  color: #C6AAC6;
+  color: #c6aac6;
   background: #331433;
   border-radius: 126px;
 }
@@ -690,32 +689,30 @@
 .footer-signup-section {
   display: flex;
   flex-direction: column;
-  align-items: center;       
+  align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: rgba(44, 15, 41, 1); 
-  text-align: center;      
+  background: rgba(44, 15, 41, 1);
+  text-align: center;
 }
-
 
 .footer-signup-title h1 {
   font-weight: 900;
   font-size: 30px;
   line-height: 34px;
-  color: #FFFFFF;
-  margin-bottom: 40px;      
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .row {
   display: flex;
-  justify-content: center;   
+  justify-content: center;
   width: 100%;
 }
 
-
 @media (max-width: 768px) {
   .email-cta {
-    flex-direction: column;  
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -724,7 +721,7 @@
     width: 100%;
   }
   .signup-cta {
-    flex-direction: column;  
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -733,7 +730,6 @@
     width: 100%;
   }
 }
-
 
 .email-cta {
   box-sizing: border-box;
@@ -780,7 +776,6 @@
   cursor: pointer;
   white-space: nowrap;
 }
-
 
 .email-cta button:hover {
   background: #c8174e;
