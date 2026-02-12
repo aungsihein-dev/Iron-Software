@@ -301,6 +301,73 @@
   color: #ffffff;
   font-weight: 500;
 }
+
+/* ---------------------------- */
+/*  FEATURE SECTION */
+/* ---------------------------- */
+.feature-first-section {
+  width: 100%;
+  background: radial-gradient(
+    ellipse at top,
+    #2c0f29ff 0%,
+    #2d0f29ff 30%,
+    #2f0f2aff 50%,
+    #310f2bff 75%,
+    #3a0f2e 100%
+  );
+}
+
+.feat-title-row {
+  padding: 40px 0;
+}
+.features-row {
+  padding: 40px 0 80px;
+}
+
+.features-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 230px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.feature-second-section {
+  width: 100%;
+  background: #2c0f29;
+}
+.feat-description {
+  color: #ffffff;
+  padding: 40px 0 80px;
+}
+.badge {
+  display: inline-block;
+  width: 80px;        /* adjust size */
+  height: auto;
+  margin-left: 15px;  /* space from title */
+  vertical-align: middle; /* align with h1 */
+}
+/* ---------------------------- */
+/* FEATURE TYPOGRAPHY */
+/* ---------------------------- */
+.feat-title {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 50px;
+}
+.feat-hash {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.feat-sub {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100; /* optional spacing */
+}
 /* ---------------------------- */
 /* RESPONSIVE MEDIA QUERIES */
 /* ---------------------------- */
@@ -552,55 +619,32 @@
 
 @media (max-width: 576px) {
   .signup-form {
-    flex-direction: column;
-    height: auto;
-    border-radius: 20px;
+    display: flex !important; /* ensure flex is applied */
+    flex-direction: row !important; /* input left, button right */
+    align-items: center; /* vertically center content */
+    height: 56px; /* fixed height */
+    max-width: 100%; /* fit container */
+    border-radius: 78px;
+    overflow: hidden;
   }
 
   .signup-input {
-    height: 56px;
-    width: 100%;
-  }
-
-  .signup-btn {
-    width: 100%;
-    min-width: unset;
-    height: 56px;
-    border-radius: 0 0 20px 20px;
-    justify-content: center;
-  }
-}
-@media (max-width: 576px) {
-  .signup-form {
-    flex-direction: column;
-    height: auto;
-    border-radius: 20px;
-  }
-
-  .signup-input {
-    height: 56px;
-    width: 100%;
-  }
-
-  .signup-btn {
-    width: 100%;
-    min-width: unset;
-    height: 56px;
-    border-radius: 0 0 20px 20px;
-    justify-content: center;
-  }
-  .signup-section {
-    width: 100%;
-    margin-left: 0;
-  }
-  .light-btn-group {
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .light-btn {
+    flex: 1; /* take remaining space */
+    height: 100%;
     width: auto;
+    border-radius: 78px 0 0 78px; /* round left side */
     padding: 0 16px;
+  }
+
+  .signup-btn {
+    flex-shrink: 0; /* prevent shrinking */
+    width: 120px; /* adjust width if needed */
+    height: 100%;
+    border-radius: 78px; /* round right side */
+    justify-content: center;
+    min-width: 80px;
+    display: flex; /* center svg/text */
+    align-items: center;
   }
 }
 
@@ -608,15 +652,16 @@
   .pdf-main {
     /* Fluid margin-left (same as before) */
     margin-left: calc(20px + (280 - 20) * ((100vw - 1201px) / (1869 - 1201)));
-    
+
     /* Fluid scale: now shrink ~30% at min width */
-    transform: scale(calc(0.65 + (1.5 - 0.65) * ((100vw - 1201px) / (1869 - 1201))));
+    transform: scale(
+      calc(0.65 + (1.5 - 0.65) * ((100vw - 1201px) / (1869 - 1201)))
+    );
     /* Fluid max-width */
     max-width: calc(425px + (900 - 425) * ((100vw - 1201px) / (1869 - 1201)));
 
-     width: 95%;
+    width: 95%;
   }
-  
 }
 
 /* Ultra-wide screens ≥ 1870px */
@@ -625,7 +670,7 @@
     margin-left: 300px;
     transform: scale(1.5);
     max-width: 1100px;
-     width: 98%;
+    width: 98%;
   }
 }
 @media (min-width: 1871px) {
@@ -633,6 +678,6 @@
     margin-left: 300px;
     transform: scale(1.5);
     max-width: 1100px;
-     width: 100%;
+    width: 100%;
   }
 }

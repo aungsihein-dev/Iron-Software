@@ -3,6 +3,7 @@
   "heroSubtitle_1": "Beta Software Program",
   "heroSubtitle_2": "IronPDF for C++",
   "heroSubtitle_3": "Coming soon",
+
   "signupSubtitle_1": "Be one of the first",
   "signupSubtitle_2": "Sign up NOW to get early access!",
   "signupPlaceholder": "Enter email address",
@@ -12,7 +13,18 @@
   "signupSubtitle_5": "Python",
   "signupSubtitle_6": "Node.JS",
   "signupSubtitle_7": "Java",
-  "signupSubtitle_slash": " | "
+  "signupSubtitle_slash": " | ",
+
+  "IronPdfTitle": "IronPDF for C++",
+  "feat_hash": "# ",
+  "feat_sub_one": "Generate PDFs from HTML in C++",
+  "feat_sub_two": "Combine, split, and modify PDFs quickly in C++",
+  "feat_sub_three": "Extract text and images from PDFs using C++",
+  "feat_desc_one_start": "The new",
+  "feat_desc_one_bold": "IronPDF library for C++",
+  "feat_desc_one_end": "will enhance the C++ developer’s tool set with robust PDF generation and conversion capabilities. Developers will be able to generate new PDFs from HTML content (from text or from URL), as well as to combine, split, extract, and modify content from existing PDFs.",
+  "feat_desc_two_start_bold": "IronPDF for C++ ",
+  "feat_desc_two_end": "will help developers create C++ applications that can do all of these PDF processing tasks and more, with speed, precision, control, and excellence."
 }
 
 
