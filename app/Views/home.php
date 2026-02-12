@@ -41,7 +41,7 @@
             <div class="signup-content">
                 <h1 class="signup-title"><?= esc($signupSubtitle_1) ?></h1>
                 <h2 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h2>
-                <form class="signup-form">
+                <!-- <form class="signup-form">
                     <input type="email" class="signup-input" placeholder="<?= esc($signupPlaceholder) ?>" required />
                     <button type="submit" class="signup-btn">
                         <?= esc($signupButton) ?>
@@ -49,6 +49,12 @@
                             style="vertical-align: middle; margin-left: 1px;">
                             <polygon points="0,0 10,5 0,10" fill="#fff" />
                         </svg>
+                    </button>
+                </form> -->
+                <form class="signup-form">
+                    <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
+                    <button type="submit">
+                        <img src="/images/singupnow.svg" alt="Sign Up Now">
                     </button>
                 </form>
                 <div class="light-btn-group">
@@ -82,41 +88,44 @@
 </section>
 <!-- Feature Section -->
 <section class="feature-first-section">
-  <!-- FULL-WIDTH ROW -->
-  <div class="feat-title-row">
-    <div class="container">
-        <img src="/images/feature-title.svg" alt="feature title">
+    <!-- FULL-WIDTH ROW -->
+    <div class="feat-title-row">
+        <div class="container">
+            <img src="/images/feature-title.svg" alt="feature title">
+        </div>
     </div>
-  </div>
-  <div class="features-row">
-    <div class="container">
-      <div class="features-items">
-        <div class="feature-item">
-            <span class="feat-hash"><?= esc($feat_hash) ?></span>
-            <span class="feat-sub"><?= esc($feat_sub_one) ?></span>
+    <div class="features-row">
+        <div class="container">
+            <div class="features-items">
+                <div class="feature-item">
+                    <span class="feat-hash"><?= esc($feat_hash) ?></span>
+                    <span class="feat-sub"><?= esc($feat_sub_one) ?></span>
+                </div>
+                <div class="feature-item">
+                    <span class="feat-hash"><?= esc($feat_hash) ?></span>
+                    <span class="feat-sub"><?= esc($feat_sub_two) ?></span>
+                </div>
+                <div class="feature-item">
+                    <span class="feat-hash"><?= esc($feat_hash) ?></span>
+                    <span class="feat-sub"><?= esc($feat_sub_three) ?></span>
+                </div>
+            </div>
         </div>
-        <div class="feature-item">
-            <span class="feat-hash"><?= esc($feat_hash) ?></span>
-            <span class="feat-sub"><?= esc($feat_sub_two) ?></span>
-        </div>
-        <div class="feature-item">
-            <span class="feat-hash"><?= esc($feat_hash) ?></span>
-            <span class="feat-sub"><?= esc($feat_sub_three) ?></span>
-        </div>
-      </div>
     </div>
-  </div>
 
 </section>
 
 <section class="feature-second-section">
     <div class="container">
-    <div class="row feat-description">
+        <div class="row feat-description">
             <p class="desc">
-                <span class="feat-desc"><?= esc($feat_desc_one_start) ?></span><span class="feat-desc-bold"><?= esc($feat_desc_one_bold) ?></span><span class="feat-desc"><?= esc($feat_desc_one_end) ?></span>
+                <span class="feat-desc"><?= esc($feat_desc_one_start) ?></span><span
+                    class="feat-desc-bold"><?= esc($feat_desc_one_bold) ?></span><span
+                    class="feat-desc"><?= esc($feat_desc_one_end) ?></span>
             </p>
-              <p class="desc">
-                <span class="feat-desc-bold"><?= esc($feat_desc_two_start_bold) ?></span><span class="feat-desc"><?= esc($feat_desc_two_end) ?></span>
+            <p class="desc">
+                <span class="feat-desc-bold"><?= esc($feat_desc_two_start_bold) ?></span><span
+                    class="feat-desc"><?= esc($feat_desc_two_end) ?></span>
             </p>
         </div>
     </div>
@@ -126,7 +135,7 @@
     <div class="container">
         <div class="row proposition">
             <div class="col-md-4">
-                 <img src="/images/HTMLtoPDF.svg" alt="HTML to PDF">
+                <img src="/images/HTMLtoPDF.svg" alt="HTML to PDF">
             </div>
             <div class="col-md-8">
                 <div class="row propose-title">
@@ -147,30 +156,67 @@
 </section>
 
 <!-- Early access Section -->
-<section class="proposition-section">
+<section class="early-access-section">
     <div class="container">
-        <div class="row proposition">
-            <div class="col-md-4">
-                 <img src="/images/HTMLtoPDF.svg" alt="HTML to PDF">
+        <div class="row early-access">
+            <div class="row early-access-title">
+                <h1>
+                    <span class="early-access-title-start"><?= esc($early_TitleStart) ?></span>
+                    <span class="early-access-title-end"><?= esc($early_TitleEnd) ?></span>
+                </h1>
             </div>
-            <div class="col-md-8">
-                <div class="row propose-title">
-                    <h1>
-                        <span class="propose-title-start"><?= esc($propose_TitleStart) ?></span>
-                        <span class="propose-title-end"><?= esc($propose_TitleEnd) ?></span>
-                    </h1>
+            <div class="row">
+                <p class="early-access-desc"><?= esc($early_description) ?></p>
+            </div>
+            <div class="row early-access-btns gap-4">
+                <div class="tech-card">
+                    <div class="tech-badge">
+                        <span><?= esc($early_btn_one) ?></span>
+                    </div>
+
+                    <div class="tech-logo">
+                        <img src="/images/forJava.svg" alt="Java">
+                    </div>
                 </div>
-                <div class="row propose-desc">
-                    <p class="desc"><?= esc($propose_description_one) ?></p>
+                <div class="tech-card">
+                    <div class="tech-badge-two">
+                        <span><?= esc($early_btn_two) ?></span>
+                    </div>
+
+                    <div class="tech-logo">
+                        <img src="/images/forPython.svg" alt="Python">
+                    </div>
                 </div>
-                <div class="row propose-desc">
-                    <p class="desc"><?= esc($propose_description_two) ?></p>
+                <div class="tech-card">
+                    <div class="tech-badge-two">
+                        <span><?= esc($early_btn_three) ?></span>
+                    </div>
+
+                    <div class="tech-logo">
+                        <img src="/images/forNodejs.svg" alt="Node.js">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="footer-signup-section">
+    <div class="container">
+        <div class="row footer-signup-title">
+            <h1>
+                <span class="early-access-title-start"><?= esc($signupTo) ?></span>
+                <span class="early-access-title-end"><?= esc($beta) ?></span>
+            </h1>
+        </div>
+
+        <div class="row">
+            <form class="signup-form-two">
+                <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
+                <button type="submit">
+                    <img src="/images/singupnow.svg" alt="Sign Up Now">
+                </button>
+            </form>
+        </div>
+</section>
 <?php echo view('layouts/footer'); ?>
-
-
-
