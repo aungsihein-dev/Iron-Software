@@ -100,7 +100,8 @@
 .pdf-main {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 995px;
+  max-height: 890px;
 }
 
 
@@ -816,6 +817,10 @@
     text-align: center;
     margin-top: 30px;
   }
+  /* .pdf-main{
+width: clamp(700px, 55vw, 1300px);
+max-height: 98vh;
+  } */
 
   
   .hero-subtitle,
@@ -1106,8 +1111,14 @@
     top: 0;
     right: 0;
     z-index: 20;
-    width: clamp(420px, 36vw, 720px); /* Adjust size here */
-    max-height: 88vh;                 /* Adjust height cap here */
+    /* width: clamp(520px, 42vw, 900px);
+    max-height: 92vh;              */
+    /* width: clamp(600px, 48vw, 1100px);
+max-height: 94vh; */
+width: clamp(700px, 55vw, 1300px);
+max-height: 98vh;
+/* width: clamp(800px, 65vw, 1600px);
+max-height: 98vh; */
     object-fit: contain;
     pointer-events: none;
     margin: 0;
