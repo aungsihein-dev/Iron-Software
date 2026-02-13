@@ -62,11 +62,6 @@
   color: white !important;
 }
 
-@media (max-width: 960px) {
-  .d-lg-flex {
-    display: none !important;
-  }
-}
 
 #logoMenuToggle {
   cursor: pointer;
@@ -97,23 +92,17 @@
 }
 
 .hero-content {
-  padding-bottom: 200px;
+  padding-top: 200px;
   max-width: 700px;
 }
 
+
 .pdf-main {
-  margin-top: 285px;
-  margin-left: 310px;
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
   display: block;
-  margin-bottom: -100px;
-  position: relative;
-  z-index: 5;
-  transform: scale(1.5);
-  transform-origin: bottom right;
+  height: auto;
+  max-width: 100%;
 }
+
 
 /* Hero product SVG */
 .hero-product-svg {
@@ -801,20 +790,17 @@
 
 /* Tablet / medium screens */
 @media (max-width: 1543px) {
-  .pdf-main {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin-right: 275px;
-  }
-
+  
   .hero-section {
     background-color: #2c0f29;
     min-height: 350px;
-    height: 100vh;
+    height: auto;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 2;
+  }
+  .signup-section {
+    z-index: 1;
   }
 }
 
@@ -831,14 +817,7 @@
     margin-top: 30px;
   }
 
-  .pdf-main {
-    width: 100%;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin-right: auto;
-  }
-
+  
   .hero-subtitle,
   .hero-subtitle-secondary {
     font-size: 32px;
@@ -853,6 +832,7 @@
     font-size: 12px;
     line-height: 24px;
   }
+
 
   .signup-section {
     padding: 60px 20px;
@@ -939,8 +919,10 @@
     scroll-behavior: auto !important;
   }
 
-  .pdf-main {
-    transform: none !important;
+  }
+@media (max-width: 960px) {
+  .d-lg-flex {
+    display: none !important;
   }
 }
 
@@ -996,15 +978,7 @@
     text-align: center;
   }
 
-  .pdf-main {
-    max-width: 520px;
-    width: 100%;
-    margin: 16px auto 0;
-    margin-left: auto;
-    margin-right: auto;
-    transform: none;
-  }
-
+  
   .signup-section {
     padding: 56px 16px 56px;
     text-align: center;
@@ -1020,13 +994,7 @@
     display: none !important;
   }
 
-  .pdf-main {
-    transform: none;
-
-    margin: 24px auto 0;
-    max-width: 680px;
-  }
-
+  
   .hero-section {
     height: auto;
     overflow: visible;
@@ -1062,10 +1030,7 @@
     max-width: 1320px;
   }
 
-  .pdf-main {
-    max-width: 1100px;
-  }
-
+  
   .hero-content {
     padding-bottom: 20px;
   }
@@ -1133,36 +1098,37 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1869px) {
+@media (min-width: 1200px) {
+  .hero-section { overflow: visible; }
+  .signup-section { position: relative; z-index: 1; }
   .pdf-main {
-    /* Fluid margin-left (same as before) */
-    margin-left: calc(20px + (280 - 20) * ((100vw - 1201px) / (1869 - 1201)));
-
-    /* Fluid scale: now shrink ~30% at min width */
-    transform: scale(
-      calc(0.65 + (1.5 - 0.65) * ((100vw - 1201px) / (1869 - 1201)))
-    );
-    /* Fluid max-width */
-    max-width: calc(425px + (900 - 425) * ((100vw - 1201px) / (1869 - 1201)));
-
-    width: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: clamp(420px, 36vw, 720px); /* Adjust size here */
+    max-height: 88vh;                 /* Adjust height cap here */
+    object-fit: contain;
+    pointer-events: none;
+    margin: 0;
   }
 }
 
-/* Ultra-wide screens ≥ 1870px */
-@media (min-width: 1870px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .pdf-main {
-    margin-left: 300px;
-    transform: scale(1.5);
-    max-width: 1100px;
-    width: 98%;
-  }
-}
-@media (min-width: 1871px) {
-  .pdf-main {
-    margin-left: 300px;
-    transform: scale(1.5);
-    max-width: 1100px;
+    position: static;
     width: 100%;
+    max-width: 680px;
+    margin: 24px auto 0;
   }
 }
+
+@media (max-width: 767.98px) {
+  .pdf-main {
+    position: static;
+    width: 100%;
+    max-width: 520px;
+    margin: 16px auto 0;
+  }
+}
+
