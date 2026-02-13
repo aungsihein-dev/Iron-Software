@@ -522,7 +522,16 @@
   font-size: 16px;
   font-weight: 500;
 }
-
+.features-items {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
 /* ---------------------------- */
 /* PROPOSITION SECTION */
 /* ---------------------------- */
@@ -1036,6 +1045,16 @@
   .hero-content {
     padding-bottom: 20px;
   }
+      .features-items {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    flex-wrap: nowrap;
+    color: #ffffff;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1050,6 +1069,17 @@
   .hero-content {
     padding-bottom: 20px;
   }
+    .features-items {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 190px;
+    flex-wrap: nowrap;
+    color: #ffffff;
+  }
+
 }
 
 @supports (padding: max(0px)) {

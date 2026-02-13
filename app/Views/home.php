@@ -38,41 +38,41 @@
 <section class="signup-section">
     <div class="container">
         <div class="row">
-            <div class="signup-content">
-                <h1 class="signup-title"><?= esc($signupSubtitle_1) ?></h1>
-                <h2 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h2>
-                <form class="signup-form">
-                    <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
-                    <button type="submit">
-                        <img src="/images/singupnow.svg" alt="Sign Up Now">
-                    </button>
-                </form>
-                <div class="light-btn-group">
-                    <div class="light-btn">
-                        <?= esc($signupSubtitle_3) ?>
-                    </div>
-                    <div class="signup-subtitle-light">
-                        <?= esc($signupSubtitle_4) ?>
-                    </div>
-                    <div class="signup-subtitle-light-two">
-                        <?= esc($signupSubtitle_5) ?>
-                    </div>
-                    <div class="signup-subtitle-light">
-                        <?= esc($signupSubtitle_slash) ?>
-                    </div>
-                    <div class="signup-subtitle-light-two">
-                        <?= esc($signupSubtitle_6) ?>
-                    </div>
-                    <div class="signup-subtitle-light">
-                        <?= esc($signupSubtitle_slash) ?>
-                    </div>
-                    <div class="signup-subtitle-light-two">
-                        <?= esc($signupSubtitle_7) ?>
+            <div class="col-12">
+                <div class="signup-content">
+                    <h1 class="signup-title"><?= esc($signupSubtitle_1) ?></h1>
+                    <h2 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h2>
+                    <form class="signup-form">
+                        <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
+                        <button type="submit">
+                            <img src="/images/singupnow.svg" alt="Sign Up Now">
+                        </button>
+                    </form>
+                    <div class="light-btn-group">
+                        <div class="light-btn">
+                            <?= esc($signupSubtitle_3) ?>
+                        </div>
+                        <div class="signup-subtitle-light">
+                            <?= esc($signupSubtitle_4) ?>
+                        </div>
+                        <div class="signup-subtitle-light-two">
+                            <?= esc($signupSubtitle_5) ?>
+                        </div>
+                        <div class="signup-subtitle-light">
+                            <?= esc($signupSubtitle_slash) ?>
+                        </div>
+                        <div class="signup-subtitle-light-two">
+                            <?= esc($signupSubtitle_6) ?>
+                        </div>
+                        <div class="signup-subtitle-light">
+                            <?= esc($signupSubtitle_slash) ?>
+                        </div>
+                        <div class="signup-subtitle-light-two">
+                            <?= esc($signupSubtitle_7) ?>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </section>
