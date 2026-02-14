@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- LEFT: Text Content -->
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="hero-content">
                         <img src="/images/ironpdfforcplusplus.svg" alt="IronPDF for C++" class="hero-product-svg mb-3">
 
