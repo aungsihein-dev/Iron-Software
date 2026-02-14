@@ -18,6 +18,75 @@ SVG/asset pipeline for images and fonts
 Apache or compatible web server
 Google Lighthouse(Performance validation)
 
+# Architecture
+/app/Controllers/Home.php – Handles routing and JSON data loading
+
+/app/Views/layouts/ – Header & footer templates
+
+/app/Views/home.php – Main page content
+
+/public/assets/ – CSS & JS
+
+/public/images/ – SVG assets
+
+/data/content.json – Page content
+
+/data/site.json – Metadata configuration
+
+/public/robots.txt
+
+/public/sitemap.xml
+
+# SEO Optimization
+
+Head Metadata
+
+Dynamic <title> and <meta description> from JSON
+
+Canonical URL
+
+Robots meta tag
+
+Open Graph tags
+
+Twitter Card tags
+
+Favicon
+
+Crawlability
+
+robots.txt configured
+
+sitemap.xml created at root
+
+System directories disallowed
+
+Content Structure
+
+Single H1
+
+H2/H3 hierarchy corrected
+
+Semantic sections
+
+Image alt optimization
+
+
+# Accessibility
+
+Semantic elements used (header, nav, section, footer)
+
+Single H1 on page
+
+Proper heading hierarchy
+
+ARIA-friendly Bootstrap components
+
+Visible focus states
+
+Alt attributes reviewed
+
+Decorative images handled appropriately
 
 # QA Checklist
 1. Pixel Accuracy
@@ -63,29 +132,7 @@ Tested on: Chrome, Brave, Safari, Firefox, Microsoft Edge
 
 Verified: Layout consistency,Font rendering,Hover states
 
-5. SEO Validation
-
-Single H1 tag used
-
-Proper heading hierarchy (H1 → H2 → H3)
-
-Meta title and description added
-
-Alt attributes for all images
-
-Semantic HTML used (section, nav, article, footer)
-
-6. Accessibility
-
-Keyboard navigation tested
-
-Focus states visible
-
-Color contrast verified
-
-ARIA labels added where needed
-
-7. Core Web Vitals
+5. Core Web Vitals
 
 CLS minimized (fixed image dimensions)
 
@@ -95,7 +142,7 @@ JS deferred where possible
 
 CSS minimized
 
-8. Lighthouse Results
+6. Lighthouse Results
 
 Performance: 90+
 Accessibility: 90+

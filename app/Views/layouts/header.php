@@ -40,12 +40,13 @@ $keywords = $site['keywords'] ?? '';
   <meta name="robots" content="index, follow">
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
   <!-- Iron Software Link Icon -->
   <link rel="icon" type="image/png" href="/images/iron-software-icon.png">
+
 </head>
 
 <body>
@@ -97,3 +98,5 @@ $keywords = $site['keywords'] ?? '';
     </nav>
     <!-- End Navbar -->
   </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
