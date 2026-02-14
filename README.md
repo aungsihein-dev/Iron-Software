@@ -143,8 +143,8 @@ INP (8 ms)
 6. Lighthouse Results (This project has been tested using Google Lighthouse)
 
 Performance: 100%
-Accessibility: 90%
-Best Practices: 96%
+Accessibility: 96%
+Best Practices: 100%
 SEO: 100%
 
 Result Screen Shot
