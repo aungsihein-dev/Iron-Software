@@ -307,8 +307,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 26px;
-  width: 630px;
-  height: 68px;
+  width: 750px;
+  height: 60px;
 
   background: #ffffff;
   border: 3px solid #ffffff;
@@ -324,7 +324,7 @@
   flex: 1;
   margin: 0 auto;
   width: 130px;
-  height: 17px;
+  height: 9px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -347,7 +347,7 @@
   padding: 0 20px;
 
   width: 180px;
-  height: 64px;
+  height: 56px;
 
   background: #e01a59;
   border: none;
@@ -456,6 +456,8 @@
       #2f0f2aff 50%,
       #310f2bff 75%,
       #3a0f2e 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feat-title-row .container {
@@ -519,6 +521,8 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 100;
+  line-height: 28px;
+  letter-spacing: 0;
 }
 
 .feat-desc-bold {
@@ -593,7 +597,9 @@
 .proposition .col-md-4 {
   text-align: right;
 }
-
+.proposition .col-md-8 {
+  padding-top: 50px;    
+}
 /* ---------------------------- */
 /* EARLY ACCESS SECTION */
 /* ---------------------------- */
@@ -620,7 +626,7 @@
 
 .early-access-title {
   margin-bottom: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 .early-access-title-start {
@@ -648,6 +654,13 @@
   font-weight: 100;
   max-width: 1200px;
   /* or 640px */
+}
+
+/* Align Early Access title with the description width */
+.early-access-title h1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .early-access .col-md-4 {
@@ -683,7 +696,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 127px;
+  width: 140px;
   height: 36px;
 
   background: #c6aac6;
@@ -708,7 +721,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 127px;
+  width: 140px;
   height: 36px;
   color: #c6aac6;
   background: #331433;
@@ -724,7 +737,7 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: rgba(44, 15, 41, 1);
+  background: rgba(23, 6, 23,0.95);
   text-align: center;
 }
 
@@ -741,7 +754,9 @@
   justify-content: center;
   width: 100%;
 }
-
+input::placeholder {
+  font-weight: 700; 
+}
 @media (max-width: 768px) {
   .email-cta {
     flex-direction: column;
@@ -839,7 +854,13 @@
     z-index: 1;
   }
 }
-
+@media (max-width: 1200px) {
+    .proposition .col-md-4 {
+    text-align: center;
+    margin-right: 32px;
+    margin-bottom: 32px;
+  }
+}
 /* Mobile / small screens */
 @media (max-width: 992px) {
   .hero-content {
@@ -916,9 +937,7 @@ max-height: 98vh;
   .proposition .col-md-4 {
     text-align: center;
     margin-right: 32px;
-    /* spacing between image and text */
     margin-bottom: 32px;
-    /* spacing between image and text */
   }
 }
 

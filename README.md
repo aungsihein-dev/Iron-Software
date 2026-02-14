@@ -1,65 +1,122 @@
-# Iron-Software
-This project is about frontend assessment from Iron Software
+# Iron-Software Accessment
+# Project Overview
 
-# CodeIgniter 4 Framework
+This project converts the provided Figma design into a fully responsive, production-ready webpage implemented using CodeIgniter.
+
+The goal was to achieve pixel-perfect accuracy while following modern frontend standards and performance best practices.
 
 
-## What is CodeIgniter?
+# Technologies used in this project
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+PHP with CodeIgniter 4 framework 
+Composer for PHP dependency management 
+HTML
+Bootstrap
+CSS
+JavaScript pure (vanilla)
+SVG/asset pipeline for images and fonts 
+Apache or compatible web server
+Google Lighthouse(Performance validation)
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# QA Checklist
+1. Pixel Accuracy
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Compared spacing, margins, paddings with Figma inspect panel
 
-## Important Change with index.php
+Verified layout alignment at 1440px width
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Checked consistency of grid usage
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+2. Typography
 
-**Please** read the user guide for a better explanation of how CI4 works!
+Font family matches design specification
 
-## Repository Management
+Font sizes, weights, and line heights verified
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+Letter spacing checked
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+3. Responsiveness
 
-## Contributing
+Tested at:
 
-We welcome contributions from the community.
+1440px
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+1200px
 
-## Server Requirements
+992px
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+768px
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+576px
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+375px (mobile)
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Ensured:
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+No overflow issues
+
+No horizontal scroll
+
+Proper stacking behavior
+
+Image scaling correct
+
+4. Cross-Browser Testing
+
+Tested on:
+
+Chrome (latest)
+
+Firefox (latest)
+
+Edge
+
+Verified:
+
+Layout consistency
+
+Font rendering
+
+Hover states
+
+5. SEO Validation
+
+Single H1 tag used
+
+Proper heading hierarchy (H1 → H2 → H3)
+
+Meta title and description added
+
+Alt attributes for all images
+
+Semantic HTML used (section, nav, article, footer)
+
+6. Accessibility
+
+Keyboard navigation tested
+
+Focus states visible
+
+Color contrast verified
+
+ARIA labels added where needed
+
+7. Core Web Vitals
+
+CLS minimized (fixed image dimensions)
+
+LCP optimized (hero image optimized & compressed)
+
+JS deferred where possible
+
+CSS minimized
+
+8. Lighthouse Results
+
+Performance: 90+
+Accessibility: 90+
+Best Practices: 90+
+SEO: 90+
+
+Result Screen Shots
