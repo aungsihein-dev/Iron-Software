@@ -19,6 +19,7 @@ Apache or compatible web server
 Google Lighthouse(Performance validation)
 
 # Architecture
+
 /app/Controllers/Home.php – Handles routing and JSON data loading
 
 /app/Views/layouts/ – Header & footer templates
@@ -89,6 +90,7 @@ Alt attributes reviewed
 Decorative images handled appropriately
 
 # QA Checklist
+
 1. Pixel Accuracy
 
 Compared spacing, margins, paddings with Figma inspect panel
@@ -108,6 +110,7 @@ Letter spacing checked
 3. Responsiveness
 
 Tested at:
+1870px
 
 1440px
 
@@ -134,19 +137,31 @@ Verified: Layout consistency,Font rendering,Hover states
 
 5. Core Web Vitals
 
-CLS minimized (fixed image dimensions)
+LCP (Desktop 0.420 secs / Mobile 0.588 secs) 
+CLS (Desktop 0.0 / Mobile 0.0)
+FCP (Desktop 0.388 secs / Mobile 0.504 secs)
+TTFB (Desktop 0.060 secs / Mobile 0.094 secs )
+INP (8 ms)
 
-LCP optimized (hero image optimized & compressed)
+6. Lighthouse Results (This project has been tested using Google Lighthouse)
 
-JS deferred where possible
+Performance: 100%
+Accessibility: 90%
+Best Practices: 96%
+SEO: 100%
 
-CSS minimized
+Result Screen Shot
+![alt text](lighthouse-result.png)
 
-6. Lighthouse Results
 
-Performance: 90+
-Accessibility: 90+
-Best Practices: 90+
-SEO: 90+
-
-Result Screen Shots
+# Installation and Setup
+1. Clone the Repository
+git clone https://github.com/your-username/Iron-Software.git
+cd Iron-Software
+2. Install PHP
+https://windows.php.net/download/
+ensure php is ready by checking in terminal> php -v
+3. Serve the app
+php spark serve
+4. Open in browser via
+http://localhost:8080/
