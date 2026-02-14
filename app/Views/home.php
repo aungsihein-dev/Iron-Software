@@ -150,7 +150,7 @@
     <!-- Early access Section -->
     <section class="early-access-section">
         <div class="container">
-            <div class="row early-access">
+            <div class="col-md-12 early-access">
                 <div class="row early-access-title">
                     <h2>
                         <span class="early-access-title-start"><?= esc($early_TitleStart) ?></span>
