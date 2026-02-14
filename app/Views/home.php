@@ -45,7 +45,7 @@
                         <h3 class="signup-subtitle"><?= esc($signupSubtitle_2) ?></h3>
                         <form class="signup-form">
                             <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
-                            <button type="submit">
+                            <button type="submit" aria-label="Sign up now">
                                 <img src="/images/singupnow.svg" alt="">
                             </button>
                         </form>
@@ -205,7 +205,7 @@
             <div class="row">
                 <form class="signup-form-two">
                     <input type="email" placeholder="<?= esc($signupPlaceholder) ?>" required />
-                    <button type="submit">
+                    <button type="submit" aria-label="Sign up now">
                         <img src="/images/singupnow.svg" alt="">
                     </button>
                 </form>

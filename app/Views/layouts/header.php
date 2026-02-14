@@ -40,8 +40,9 @@ $keywords = $site['keywords'] ?? '';
   <meta name="robots" content="index, follow">
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS (primary CDN + secondary for redundancy) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" media="all">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
   <!-- Iron Software Link Icon -->
@@ -98,5 +99,5 @@ $keywords = $site['keywords'] ?? '';
     </nav>
     <!-- End Navbar -->
   </header>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="(function(){var s=document.createElement('script');s.src='https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';s.crossOrigin='anonymous';s.referrerPolicy='no-referrer';s.onerror=function(){var s2=document.createElement('script');s2.src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js';s2.referrerPolicy='no-referrer';document.head.appendChild(s2);};document.head.appendChild(s);})();"></script>
 </body>
