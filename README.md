@@ -3,9 +3,6 @@
 
 This project converts the provided Figma design into a fully responsive, production-ready webpage implemented using CodeIgniter.
 
-The goal was to achieve pixel-perfect accuracy while following modern frontend standards and performance best practices.
-
-
 # Technologies used in this project
 
 PHP with CodeIgniter 4 framework 
