@@ -24,7 +24,7 @@ Google Lighthouse(Performance validation)
 
 Compared spacing, margins, paddings with Figma inspect panel
 
-Verified layout alignment at 1440px width
+Verified layout alignment at every's device width from large screens to mobile devices
 
 Checked consistency of grid usage
 
@@ -50,35 +50,18 @@ Tested at:
 
 576px
 
-375px (mobile)
+375px
 
-Ensured:
-
-No overflow issues
-
-No horizontal scroll
-
-Proper stacking behavior
-
-Image scaling correct
+Ensured: No overflow issues, No horizontal scroll ,Proper stacking behavior ,Image scaling correct
+Note: The provided Figma design is best matched for laptop/desktop.
+The PDF Illustration and some large images are harder to adjust perfectly for full-screen laptop widths beyond 1440px due to scaling constraints.
+Minor adjustments were made to maintain alignment without breaking layout.
 
 4. Cross-Browser Testing
 
-Tested on:
+Tested on: Chrome, Brave, Safari, Firefox, Microsoft Edge
 
-Chrome (latest)
-
-Firefox (latest)
-
-Edge
-
-Verified:
-
-Layout consistency
-
-Font rendering
-
-Hover states
+Verified: Layout consistency,Font rendering,Hover states
 
 5. SEO Validation
 

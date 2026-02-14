@@ -23,7 +23,7 @@
 /* Gotham Bold */
 @font-face {
   font-family: "Gotham";
-  src: url("/assets/fonts/Gotham/Gotham Bold/Gotham-Bold.otf") format("opentype");
+  src: url("/assets/fonts/Gotham/Gotham Bold/Gotham Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -573,13 +573,15 @@
 .propose-title-start {
   color: #ffffff;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 44px;
 }
 
 .propose-title-end {
   color: #c6aac6;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 44px;
 }
 
 .desc {
@@ -598,7 +600,7 @@
   text-align: right;
 }
 .proposition .col-md-8 {
-  padding-top: 50px;    
+  padding-top: 60px;    
 }
 /* ---------------------------- */
 /* EARLY ACCESS SECTION */
@@ -628,19 +630,20 @@
   margin-bottom: 25px;
   text-align: left;
 }
-
 .early-access-title-start {
+
   color: #ffffff;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 44px;
 }
 
 .early-access-title-end {
   color: #c6aac6;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 44px;
 }
-
 .desc {
   color: #ffffff;
   font-size: 16px;
@@ -652,13 +655,15 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 100;
-  max-width: 1200px;
+  max-width: 100%;
   /* or 640px */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Align Early Access title with the description width */
 .early-access-title h1 {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -860,6 +865,9 @@ input::placeholder {
     margin-right: 32px;
     margin-bottom: 32px;
   }
+  .proposition .col-md-8 {
+  padding-top: 0px;    
+}
 }
 /* Mobile / small screens */
 @media (max-width: 992px) {
@@ -1225,5 +1233,74 @@ max-height: 98vh; */
     width: 100%;
     max-width: 520px;
     margin: 16px auto 0;
+  }
+}
+
+/* -------------------------------------- */
+/* Unified horizontal gutters across pages */
+/* -------------------------------------- */
+.hero-section > .container,
+.signup-section > .container,
+.feature-first-section > .container,
+.features-row > .container,
+.feature-second-section > .container,
+.proposition-section > .container,
+.early-access-section > .container,
+.footer-signup-section > .container,
+.feat-title-row > .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* For sections where content is placed directly in a row */
+.hero-section > .row,
+.signup-section > .row,
+.feature-first-section > .row,
+.features-row > .row,
+.feature-second-section > .row,
+.proposition-section > .row,
+.early-access-section > .row,
+.footer-signup-section > .row {
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* Keep gutters a bit smaller on very small screens */
+@media (max-width: 576px) {
+  .hero-section > .container,
+  .signup-section > .container,
+  .feature-first-section > .container,
+  .features-row > .container,
+  .feature-second-section > .container,
+  .proposition-section > .container,
+  .early-access-section > .container,
+  .footer-signup-section > .container,
+  .feat-title-row > .container,
+  .hero-section > .row,
+  .signup-section > .row,
+  .feature-first-section > .row,
+  .features-row > .row,
+  .feature-second-section > .row,
+  .proposition-section > .row,
+  .early-access-section > .row,
+  .footer-signup-section > .row {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Match Early Access widths to container at large breakpoints */
+@media (min-width: 1200px) {
+  .early-access-title h1,
+  .early-access-desc {
+    max-width: 1140px; /* matches .container at >=1200px */
+  }
+}
+
+@media (min-width: 1400px) {
+  .early-access-title h1,
+  .early-access-desc {
+    max-width: 1320px; /* matches .container at >=1400px */
   }
 }

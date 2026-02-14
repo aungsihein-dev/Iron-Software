@@ -35,7 +35,7 @@
   "propose_description_two": "The release of IronPDF for C++ will aid developers in building performant applications that can carry out PDF-related processing tasks.",
 
 
-  "early_TitleStart": "Early Access to:",
+  "early_TitleStart": "Early Access to ",
   "early_TitleEnd": "C++ PDF Library",
   "early_description": "Joining the early access program will allow you to collaborate closely with our engineering team. You will be playing a key role in the development process as you share your early experiences using the C++ PDF library before its official launch. Your continual feedback after we release the library will be immensely helpful as we release new features and improve on existing features.",
   "early_btn_one": "# Released",
