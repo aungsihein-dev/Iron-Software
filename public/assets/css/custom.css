@@ -324,15 +324,15 @@
   flex: 1;
   margin: 0;
   width: auto;
-  height: 56px; 
+  height: 56px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 56px; 
+  line-height: 56px;
   color: #431f43;
   border: none;
   outline: none;
   background: transparent;
-  padding: 0 16px; 
+  padding: 0 16px;
   box-sizing: border-box;
 }
 /* ---------------------------
@@ -460,17 +460,17 @@
 .feature-first-section::after {
   content: "";
   position: absolute;
-  bottom: 0;                   /* align to bottom */
-  left: calc(50% - 280px);        /* shift slightly to the right */
+  bottom: 0; /* align to bottom */
+  left: calc(50% - 280px); /* shift slightly to the right */
   transform: translateX(-50%);
-  width: 60%;                  /* width of gradient - adjust as needed */
-  height: 200px;               /* height of gradient - adjust as needed */
-  pointer-events: none;        /* don't block clicks */
-  z-index: -1;                 /* behind content */
+  width: 60%; /* width of gradient - adjust as needed */
+  height: 200px; /* height of gradient - adjust as needed */
+  pointer-events: none; /* don't block clicks */
+  z-index: -1; /* behind content */
   background: radial-gradient(
-    ellipse at center bottom,   /* center bottom of gradient */
-    rgba(64, 17, 51, 0.8) 20%, /* start color and position */
-    rgba(44, 15, 41, 0) 80%    /* fade out */
+    ellipse at center bottom,
+    /* center bottom of gradient */ rgba(64, 17, 51, 0.8) 20%,
+    /* start color and position */ rgba(44, 15, 41, 0) 80% /* fade out */
   );
 }
 .feat-title-row .container {
@@ -660,21 +660,20 @@
   content: "";
   position: absolute;
   top: 0;
-  left: calc(50% - 280px);        
+  left: calc(50% - 280px);
   transform: translateX(-50%);
   width: 100%;
-  height: 100%;                
+  height: 100%;
   pointer-events: none;
   z-index: 0;
 
   background: radial-gradient(
-    ellipse at center,          
-    rgba(178, 106, 178, 0.28) 0%, 
+    ellipse at center,
+    rgba(178, 106, 178, 0.28) 0%,
     rgba(44, 24, 44, 0.15) 66%,
-    rgba(44, 24, 44, 0.08) 70%, 
-    rgba(44, 24, 44, 0.02) 85%, 
+    rgba(44, 24, 44, 0.08) 70%,
+    rgba(44, 24, 44, 0.02) 85%,
     rgba(44, 24, 44, 0) 100%
-    
   );
 }
 /* Container adjustments */
@@ -1241,6 +1240,27 @@ max-height: 98vh;
     display: flex;
     /* center svg/text */
     align-items: center;
+  }
+  .footer-signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: rgba(23, 6, 23, 0.95);
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+  }
+  @supports (height: 100svh) {
+    .footer-signup-section {
+      min-height: 100svh;
+    }
+  }
+  @supports ((height: -webkit-fill-available) and (not (height: 100svh))) {
+    .footer-signup-section {
+      min-height: -webkit-fill-available;
+    }
   }
 }
 
