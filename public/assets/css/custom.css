@@ -363,6 +363,55 @@
 /* ---------------------------
    Mobile Responsive
 --------------------------- */
+@media (max-width: 690px) {
+    .signup-form {
+    flex-direction: row;
+    height: auto;
+    padding: 10px -50px;
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    max-width: 600px;
+    gap: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .signup-form input[type="email"],
+  .signup-form button {
+    font-size: 10px;
+    /* half of height for nice pill shape */
+  }
+  .signup-form button img {
+    width: 90px;
+    height: 70px;
+  }
+}
+@media (max-width: 580px) {
+    .signup-form {
+    flex-direction: row;
+    /* keep horizontal if you want */
+    height: auto;
+    padding: 10px -50px;
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    max-width: 510px;
+    gap: 15px;
+  }
+
+  .signup-form input[type="email"],
+  .signup-form button {
+    width: 50%;
+    height: 50px;
+    padding-right: 0px;
+    border-radius: 25px;
+    font-size: 10px;
+    /* half of height for nice pill shape */
+  }
+  .signup-form button img {
+    width: 90px;
+    height: 70px;
+  }
+}
 @media (max-width: 490px) {
   .signup-form {
     flex-direction: row;
@@ -1208,7 +1257,6 @@ max-height: 98vh;
     min-height: 350px;
   }
 }
-
 @media (max-width: 576px) {
   .signup-form {
     display: flex !important;
@@ -1224,7 +1272,6 @@ max-height: 98vh;
     border-radius: 78px;
     overflow: hidden;
   }
-
   .signup-input {
     flex: 1;
     /* take remaining space */
