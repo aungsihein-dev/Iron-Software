@@ -379,9 +379,17 @@
     height: 50px;
     padding-right: 0px;
     border-radius: 25px;
+    font-size: 10px;
     /* half of height for nice pill shape */
   }
-
+  .signup-form button img {
+    width: 90px;
+    height: 70px;
+  }
+  .signup-form-two button img {
+    width: 90px;
+    height: 70px;
+  }
   .signup-form-two {
     flex-direction: row;
     /* keep horizontal if you want */
@@ -397,10 +405,10 @@
     height: 50px;
     padding-right: 0px;
     border-radius: 25px;
+    font-size: 10px;
     /* half of height for nice pill shape */
   }
 }
-
 .light-btn-group {
   display: flex;
   gap: 12px;
@@ -1211,7 +1219,7 @@ max-height: 98vh;
     /* vertically center content */
     height: 56px;
     /* fixed height */
-    max-width: 100%;
+    max-width: 280px;
     /* fit container */
     border-radius: 78px;
     overflow: hidden;
