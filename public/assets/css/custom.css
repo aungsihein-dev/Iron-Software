@@ -322,20 +322,19 @@
 --------------------------- */
 .signup-form-two input[type="email"] {
   flex: 1;
-  margin: 0 auto;
-  width: 130px;
-  height: 9px;
+  margin: 0;
+  width: auto;
+  height: 56px; 
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
-
+  line-height: 56px; 
   color: #431f43;
-
   border: none;
   outline: none;
   background: transparent;
+  padding: 0 16px; 
+  box-sizing: border-box;
 }
-
 /* ---------------------------
    Submit Button
 --------------------------- */
